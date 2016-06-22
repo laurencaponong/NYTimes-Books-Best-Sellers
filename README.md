@@ -7,6 +7,8 @@ Swift application listing NYTimes Best Sellers in UITableView using <a href="htt
 
 <h4>Features to be added in future versions</h4>
 - Search function
+- Detail view controller
+- Image of book
 - Save book to 'favorites' list
 - Sorting by top best seller
 - Purchase book on remote site
