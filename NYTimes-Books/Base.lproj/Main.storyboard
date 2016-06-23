@@ -21,25 +21,66 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="129.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ju-QJ-7Qp">
-                                            <rect key="frame" x="91" y="34" width="78" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6M-NL-fm8">
-                                            <rect key="frame" x="167" y="74" width="78" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nas-IA-A1a">
-                                            <rect key="frame" x="40" y="82" width="32" height="12"/>
-                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-9t-nK2">
+                                            <rect key="frame" x="10" y="10" width="580" height="110"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oa2-ot-5Wi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="110"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="DoI-QX-4lG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M1A-xh-3Qu">
+                                                    <rect key="frame" x="95" y="0.0" width="485" height="110"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-lH-RDZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="485" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Book title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ju-QJ-7Qp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="243" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nas-IA-A1a">
+                                                                    <rect key="frame" x="243" y="0.0" width="243" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6M-NL-fm8">
+                                                            <rect key="frame" x="0.0" y="21" width="485" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M1A-xh-3Qu" firstAttribute="top" secondItem="AZq-9t-nK2" secondAttribute="top" constant="10" id="dFM-0Q-FpI"/>
+                                                <constraint firstAttribute="bottom" secondItem="M1A-xh-3Qu" secondAttribute="bottom" constant="10" id="dXX-RI-vN1"/>
+                                                <constraint firstAttribute="trailing" secondItem="M1A-xh-3Qu" secondAttribute="trailing" constant="10" id="yEj-dj-88a"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="dFM-0Q-FpI"/>
+                                                    <exclude reference="dXX-RI-vN1"/>
+                                                    <exclude reference="yEj-dj-88a"/>
+                                                </mask>
+                                            </variation>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AZq-9t-nK2" firstAttribute="top" secondItem="fND-HO-6Hr" secondAttribute="top" constant="10" id="AEm-S2-Tnh"/>
+                                        <constraint firstAttribute="trailing" secondItem="AZq-9t-nK2" secondAttribute="trailing" constant="10" id="Cmd-be-URj"/>
+                                        <constraint firstItem="AZq-9t-nK2" firstAttribute="leading" secondItem="fND-HO-6Hr" secondAttribute="leading" constant="10" id="D6A-o1-rqe"/>
+                                        <constraint firstAttribute="bottom" secondItem="AZq-9t-nK2" secondAttribute="bottom" constant="10" id="S4a-e6-Ull"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="authorLabel" destination="nas-IA-A1a" id="bFE-I5-Jgu"/>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9815162F974BCA6F8DEE0546CBC74FE8316FDCA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9815162F974BCA6F8DEE0546CBC74FE8316FDCA3" : 0,
+    "B6527502F4B87753D78BEED822385848D844C49B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "97FBECAB-CE77-4E35-B415-6F6DA38DDD04",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9815162F974BCA6F8DEE0546CBC74FE8316FDCA3" : "NYTimes-Books\/",
+    "B6527502F4B87753D78BEED822385848D844C49B" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NYTimes-Books",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NYTimes-Books.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/laurencaponong\/NYTimes-Books-Best-Sellers.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9815162F974BCA6F8DEE0546CBC74FE8316FDCA3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/laurencaponong\/spequal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6527502F4B87753D78BEED822385848D844C49B"
+    }
+  ]
+}

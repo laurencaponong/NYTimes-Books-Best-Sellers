@@ -15,30 +15,33 @@ class Book {
     let author: String
     var description: String? = nil
     var category: String? = nil
+    var imageURL: String? = nil
 
     class func booksFromJSON(json: Dictionary<String, AnyObject>) -> [Book] {
         
         var books = [Book]()
         
-        if let results = json["results"] as? Array<Dictionary<String, AnyObject>> {
-            
-            print("RESULTS: \(results)")
-            for i in 0..<results.count {
-                if let dictOfBook = results[i] as? AnyObject {
+        if let results = json["results"] as? Dictionary<String, AnyObject> {
+            if let booksFromResults = results["books"] as? [AnyObject] {
+            for i in 0..<booksFromResults.count {
+                if let dictOfBook = booksFromResults[i] as? AnyObject {
                     let bookTitle = dictOfBook["title"] as! String
                     let bookAuthor = dictOfBook["author"] as! String
                     let bookDesc = dictOfBook["description"] as? String
                     let bookCategory = dictOfBook["list_name"] as? String
-                    books.append(Book.init(title: bookTitle, author: bookAuthor, description: bookDesc, category: bookCategory))
+                    let bookImageURL = dictOfBook["book_image"] as? String
+                    books.append(Book.init(title: bookTitle, author: bookAuthor, description: bookDesc, category: bookCategory, imageURL: bookImageURL))
+                    }
                 }
             }
-        }
         
+            
+        }
         return books
         
     }
     
-    init(title: String, author: String, description: String?, category: String?) {
+    init(title: String, author: String, description: String?, category: String?, imageURL: String?) {
         
         self.title = title
         self.author = author
@@ -48,6 +51,11 @@ class Book {
         
         if let cat = category {
             self.category = cat
+        }
+        
+        
+        if let url = imageURL {
+            self.imageURL = url
         }
     }
     

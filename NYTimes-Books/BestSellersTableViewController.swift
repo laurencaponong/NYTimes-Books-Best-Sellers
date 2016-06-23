@@ -16,7 +16,7 @@ class BestSellersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getDataFromAPI()
-        self.title = "New York Times Current Best Sellers"
+        self.title = "New York Times E-Book Fiction List"
     }
     
     func getDataFromAPI() {
@@ -32,7 +32,6 @@ class BestSellersTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -43,7 +42,6 @@ class BestSellersTableViewController: UITableViewController {
         return booksList.count
     }
 
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomTableViewCell
