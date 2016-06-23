@@ -1,4 +1,4 @@
-# NYTimes-Books-Best-Sellers
+# NYTimes E-Book Fiction List
 
 
 Swift application showing NYTimes E-Book Fiction list in UITableView using <a href="https://github.com/Alamofire/Alamofire">Alamofire</a> and the <a href="https://developer.nytimes.com/">New York Times Books API</a>
